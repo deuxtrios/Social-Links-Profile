@@ -1,0 +1,147 @@
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+  body {
+    background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body div#container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #1F1F1F;
+    padding: 2em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 70%;
+  }
+  body div#container section#name-address-info {
+    text-align: center;
+  }
+  body div#container div#main-menu button {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    font-size: 1em;
+    padding: 1em;
+    background-color: #333333;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "BodyFont";
+    src: url("assets/fonts/static/Inter-Bold.ttf") format("truetype"), url("assets/fonts/static/Inter-Regular.ttf") format("truetype"), url("assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+    font-weight: normal;
+  }
+  body {
+    font-family: "BodyFont", sans-serif;
+  }
+  body div#container header {
+    display: flex;
+    justify-content: center;
+  }
+  body div#container header img {
+    border-radius: 50%;
+    width: 30%;
+  }
+  body div#container section#name-address-info h1 {
+    font-size: 2em;
+  }
+  body div#container section#name-address-info p#london {
+    margin-top: -0.8em;
+    margin-bottom: 1.5em;
+    color: #CFED5B;
+  }
+  body div#container div.attribution a {
+    text-decoration: none;
+    color: #00CED1;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 2000px) {
+  body {
+    background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body div#container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #1F1F1F;
+    padding: 2em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  body div#container section#name-address-info {
+    text-align: center;
+  }
+  body div#container div#main-menu button {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    font-size: 1em;
+    padding: 0.7em;
+    background-color: #333333;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "BodyFont";
+    src: url("assets/fonts/static/Inter-Bold.ttf") format("truetype"), url("assets/fonts/static/Inter-Regular.ttf") format("truetype"), url("assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+    font-weight: normal;
+  }
+  body {
+    font-family: "BodyFont", sans-serif;
+  }
+  body div#container header {
+    display: flex;
+    justify-content: center;
+  }
+  body div#container header img {
+    width: 30%;
+    border-radius: 50%;
+  }
+  body div#container section#name-address-info h1 {
+    font-size: 2em;
+  }
+  body div#container section#name-address-info p#london {
+    margin-top: -0.8em;
+    margin-bottom: 1.5em;
+    color: #CFED5B;
+  }
+  body div#container div.attribution a {
+    text-decoration: none;
+    color: #00CED1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

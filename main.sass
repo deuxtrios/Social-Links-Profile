@@ -1,0 +1,274 @@
+@media only screen and (min-width: 300px) and (max-width: 1000px)
+    // Body 
+    %body-styles-mobile
+        $body-background-color: #141414
+        $body-color: white
+        $body-display: flex
+        $body-justify-content: center
+        $body-align-items: center
+        $body-margin-top: 10%
+        $body-font-size: 16px
+        $body-width: 100%
+        $body-height: 100%
+        $padding: 0
+        $margin: 0
+
+        background-color: $body-background-color
+        color: $body-color
+        display: $body-display
+        justify-content: $body-justify-content
+        align-items: $body-align-items
+        margin-top: $body-margin-top
+        font-size: $body-font-size
+        width: $body-width
+        height: $body-height
+        padding: $padding
+        margin: $margin
+
+    // Container
+    %container-styles-mobile
+        $container-display: flex
+        $container-flex-direction: column
+        $container-justify-content: center
+        $container-align-items: center
+        $container-border: 1px solid transparent
+        $container-border-radius: 10px
+        $container-background-color: #1F1F1F
+        $container-padding: 2em
+        $container-margin-top: 10%
+        $container-margin-bottom: 10%
+        $container-width: 70%
+
+        display: $container-display
+        flex-direction: $container-flex-direction
+        border: $container-border
+        border-radius: $container-border-radius
+        background-color: $container-background-color
+        padding: $container-padding
+        margin-top: $container-margin-top
+        margin-bottom: $container-margin-bottom
+        width: $container-width
+    // Header
+
+    // Name-Address-Info
+    %name-address-info-mobile
+        $name-address-text-align: center
+
+        text-align: $name-address-text-align
+    // Main-Menu
+    %main-menu-mobile
+        $main-menu-display: flex 
+        $main-menu-flex-direction: column
+        $main-menu-justify-self: center
+        $main-menu-align-self: center
+        $main-menu-margin-top: 0.5em
+        $main-menu-margin-bottom: 1em
+        $main-menu-width: 100%
+        $main-menu-font-size: 1em
+        $main-menu-padding: 1em 
+        $main-menu-background-color: #333333
+        $main-menu-border: 0px solid transparent
+        $main-menu-border-radius: 5px
+        $main-menu-color: white
+        $main-menu-font-weight: 700
+
+        display: $main-menu-display
+        flex-direction: $main-menu-flex-direction
+        justify-self: $main-menu-justify-self
+        align-self: $main-menu-align-self
+        margin-top: $main-menu-margin-top
+        margin-bottom: $main-menu-margin-bottom
+        width: $main-menu-width
+        font-size: $main-menu-font-size
+        padding: $main-menu-padding
+        background-color: $main-menu-background-color
+        border: $main-menu-border
+        border-radius: $main-menu-border-radius
+        color: $main-menu-color
+        font-weight: $main-menu-font-weight
+
+    @font-face 
+        font-family: 'BodyFont'
+        src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype'), url('assets/fonts/static/Inter-Regular.ttf') format('truetype'), url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype')
+        font-weight: normal
+    
+
+
+    body
+        @extend %body-styles-mobile
+        font-family: 'BodyFont', sans-serif
+        div#container
+            @extend %container-styles-mobile
+            header
+                $header-img-border-radius: 50%
+                $header-display: flex
+                $header-img-justify-content: center
+                $header-img-width: 30%
+
+                display: $header-display
+                justify-content: $header-img-justify-content
+                img
+                    border-radius: $header-img-border-radius                   
+                    width: $header-img-width
+            section#name-address-info
+                @extend %name-address-info-mobile
+                // Paragraph 1
+                $p-london-margin-top: -0.8em
+                $p-london-margin-bottom: 1.5em
+                $p-london-color: #CFED5B
+                // Heading 1
+                $h1-font-size: 2em
+                h1
+                    font-size: $h1-font-size
+                p#london
+                    margin-top: $p-london-margin-top
+                    margin-bottom: $p-london-margin-bottom
+                    color: $p-london-color
+            div#main-menu
+                button
+                    @extend %main-menu-mobile
+            div.attribution
+                $a-text-decoration: none
+                $a-color: #00CED1
+                a
+                    text-decoration: $a-text-decoration
+                    color: $a-color
+
+
+@media only screen and (min-width: 1000px) and (max-width: 2000px)
+
+    // Body 
+    %body-styles
+        $body-background-color: #141414
+        $body-color: white
+        $body-display: flex
+        $body-justify-content: center
+        $body-align-items: center
+        $body-margin-top: 10%
+        $body-font-size: 16px
+        $body-width: 100%
+        $body-height: 100%
+        $padding: 0
+        $margin: 0
+
+        background-color: $body-background-color
+        color: $body-color
+        display: $body-display
+        justify-content: $body-justify-content
+        align-items: $body-align-items
+        margin-top: $body-margin-top
+        font-size: $body-font-size
+        width: $body-width
+        height: $body-height
+        padding: $padding
+        margin: $margin
+
+    // Container
+    %container-styles
+        $container-display: flex
+        $container-flex-direction: column
+        $container-justify-content: center
+        $container-align-items: center
+        $container-border: 1px solid transparent
+        $container-border-radius: 10px
+        $container-background-color: #1F1F1F
+        $container-padding: 2em
+        $container-margin-top: 10%
+        $container-margin-bottom: 10%
+
+        display: $container-display
+        flex-direction: $container-flex-direction
+        border: $container-border
+        border-radius: $container-border-radius
+        background-color: $container-background-color
+        padding: $container-padding
+        margin-top: $container-margin-top
+        margin-bottom: $container-margin-bottom
+    // Header
+
+    // Name-Address-Info
+    %name-address-info
+        $name-address-text-align: center
+
+        text-align: $name-address-text-align
+    // Main-Menu
+    %main-menu
+        $main-menu-display: flex 
+        $main-menu-flex-direction: column
+        $main-menu-justify-self: center
+        $main-menu-align-self: center
+        $main-menu-margin-top: 0.5em
+        $main-menu-margin-bottom: 1em
+        $main-menu-width: 100%
+        $main-menu-font-size: 1em
+        $main-menu-padding: 0.7em 
+        $main-menu-background-color: #333333
+        $main-menu-border: 0px solid transparent
+        $main-menu-border-radius: 5px
+        $main-menu-color: white
+        $main-menu-font-weight: 700
+
+        display: $main-menu-display
+        flex-direction: $main-menu-flex-direction
+        justify-self: $main-menu-justify-self
+        align-self: $main-menu-align-self
+        margin-top: $main-menu-margin-top
+        margin-bottom: $main-menu-margin-bottom
+        width: $main-menu-width
+        font-size: $main-menu-font-size
+        padding: $main-menu-padding
+        background-color: $main-menu-background-color
+        border: $main-menu-border
+        border-radius: $main-menu-border-radius
+        color: $main-menu-color
+        font-weight: $main-menu-font-weight
+
+
+    @font-face 
+        font-family: 'BodyFont'
+        src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype'), url('assets/fonts/static/Inter-Regular.ttf') format('truetype'), url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype')
+        font-weight: normal
+    
+
+    body
+        @extend %body-styles
+        font-family: 'BodyFont', sans-serif
+        div#container
+            @extend %container-styles
+            header
+                $header-img-border-radius: 50%
+                $header-display: flex
+                $header-img-justify-content: center
+                $header-img-width: 30%
+
+                display: $header-display
+                justify-content: $header-img-justify-content
+                
+                img
+                    width: $header-img-width
+                    border-radius: $header-img-border-radius
+            section#name-address-info
+                @extend %name-address-info
+                // Paragraph 1
+                $p-london-margin-top: -0.8em
+                $p-london-margin-bottom: 1.5em
+                $p-london-color: #CFED5B
+                // Heading 1
+                $h1-font-size: 2em
+                h1
+                    font-size: $h1-font-size
+                p#london
+                    margin-top: $p-london-margin-top
+                    margin-bottom: $p-london-margin-bottom
+                    color: $p-london-color
+            div#main-menu
+                button
+                    @extend %main-menu
+            div.attribution
+                $a-text-decoration: none
+                $a-color: #00CED1
+                a
+                    text-decoration: $a-text-decoration
+                    color: $a-color
+
+                    
