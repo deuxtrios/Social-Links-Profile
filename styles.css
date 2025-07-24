@@ -27,10 +27,7 @@
     text-align: center;
   }
   body div#container div#main-menu button {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-self: center;
+    text-align: center;
     margin-top: 0.5em;
     margin-bottom: 1em;
     width: 100%;
@@ -99,10 +96,7 @@
     text-align: center;
   }
   body div#container div#main-menu button {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-self: center;
+    text-align: center;
     margin-top: 0.5em;
     margin-bottom: 1em;
     width: 100%;
